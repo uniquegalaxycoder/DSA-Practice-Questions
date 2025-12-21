@@ -53,3 +53,18 @@ print(reverse_array_type_three(arr2))
 # Time Complexity -> O(n) ( we did n//2 but array iterate element till n//2 so, O(n))
 # Space Complexity -> O(1) not took any extra veriable, did inplace
 
+
+# -------- using Recursion methode 
+
+def reverse_array(arr, start, end):
+    if start >= end :
+        return
+    arr[start], arr[end] = arr[end], arr[start]
+    reverse_array(arr, start+1, end-1)
+
+arr = [1, 2, 3, 4, 5]
+reverse_array(arr, 0, len(n)-1)
+print(arr)
+
+
+
