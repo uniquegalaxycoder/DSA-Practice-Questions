@@ -1,4 +1,4 @@
-""" Find the max one's  """
+""" Find the max consicutive one's  """
 
 
 def maxOnes(arr:list):
